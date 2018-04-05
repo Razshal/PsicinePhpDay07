@@ -1,5 +1,5 @@
 <?php
-Class Fighter {
+abstract Class Fighter {
     private $name;
 
     public function __construct($name_entry)
@@ -10,4 +10,6 @@ Class Fighter {
     {
         return $this->name;
     }
+    abstract public function fight($target);
 }
+?>
